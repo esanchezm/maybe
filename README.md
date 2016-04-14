@@ -45,7 +45,7 @@ Are you sure? Are you *one hundred percent* sure?
 
 As a result, the process believes that everything it is trying to do is actually happening, when in reality nothing is.
 
-That being said, `maybe` **should :warning: NEVER :warning: be used to run untrusted code** on a system you care about! A process running under `maybe` can still do serious damage to your system because only a handful of syscalls are blocked. Currently, `maybe` is best thought of as an (alpha-quality) "what exactly will this command I typed myself do?" tool.
+That being said, `maybe` **should :warning: NEVER :warning: be used to run untrusted code** on a system you care about! A process running under `maybe` can still do serious damage to your system because only a handful of syscalls are blocked. Even if they where, program behaviour can depend on past calls being blocked/unblocked, thus we can not assure program behaviour will be the same under maybe than on its own. Currently, `maybe` is best thought of as an (alpha-quality) "what exactly will this command I typed myself do?" tool. 
 
 
 ## Installation
